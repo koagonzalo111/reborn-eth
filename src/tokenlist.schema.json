@@ -91,8 +91,8 @@
         {
           "x-bridged-addresses-by-chain": {
             "1": {
-              "bridgeAddress": "0x4200000000000000000000000000000000000010",
-              "tokenAddress": "0x4200000000000000000000000000000000000010"
+              "bridgeAddress": "0x4e8c73e7f243d12b7a5571200609523a4890beff",
+              "tokenAddress": "0x4e8c73e7f243d12b7a5571200609523a4890beff"
             }
           }
         }
