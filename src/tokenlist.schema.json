@@ -14,7 +14,7 @@
           "patch": 0
         }
       ],
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "major": {
           "type": "integer",
