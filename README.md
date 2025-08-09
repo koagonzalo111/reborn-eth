@@ -130,3 +130,4 @@ This is the preferred way of referencing your list.
 You can find a simple example of a token list in [test/schema/example.tokenlist.json](test/schema/example.tokenlist.json).
 
 A snapshot of the Uniswap default list encoded as a token list is found in [test/schema/bigexample.tokenlist.json](test/schema/bigexample.tokenlist.json).
+[![GitHub stars](https://img.shields.io/github/stars/Elparadisogonzalo/Assets3-1e473f24?style=social)](https://github.com/Elparadisogonzalo/Assets3-1e473f24/stargazers)
