@@ -1,5 +1,5 @@
 env:
-  NODE_AUTH_TOKEN: ${{ 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 }}
+  NODE_AUTH_TOKEN: ${{ }}
 name: CI
 
 # Controls when the workflow will run
@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-@koagonzalo11:registry=https://npm.pkg.github.com
-echo "//registry.npmjs.org/:_authToken=<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>" 
+@azeha:registry=https://npm.pkg.elparadisogonzalo.com
+echo "//registry.npmjs.org/:_authToken="<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>" 
 - name: Attest Build Provenance
   uses: actions/attest-build-provenance@v2.2.3
