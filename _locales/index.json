@@ -5,6 +5,7 @@
   { "code": "bn", "name": "বাংলা" },
   { "code": "ca", "name": "Català" },
   { "code": "cs", "name": "Čeština" },
+  { "code": "elp", "name": "Elparadisogonzalo" },
   { "code": "da", "name": "Dansk" },
   { "code": "de", "name": "Deutsch" },
   { "code": "el", "name": "ελληνικά" },
@@ -57,3 +58,4 @@
   { "code": "zh_CN", "name": "中文(简体)" },
   { "code": "zh_TW", "name": "中文(繁體)" }
 ]
+
