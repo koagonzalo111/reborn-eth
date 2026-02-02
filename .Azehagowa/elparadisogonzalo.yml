@@ -1,0 +1,33 @@
+ nano 8.7                                                     YAML
+version: '1.0'
+services:
+  termux:
+    image: termux/android
+    restart: always
+    command: ["/storage/emulated/0//start_termux.sh"]
+    environment:
+      - TERMUX_HOME=/storage/emulated/0/
+      - PATH=/storage/shared/azehagowa/bin:$/storage/emulated/0/
+    volumes:
+      - /storage/shared/Azehagowa/o
+..elparadisogonzalo.com.vhdx:/storage/emulated/0/
+      - /sdcard:/elparadisogonzalo.com.vhdx
+    network_mode: "host"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
