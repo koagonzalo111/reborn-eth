@@ -8,6 +8,6 @@ services:
       - TERMUX_HOME=/storage/emulated/0/
       - PATH=/data/data/com.termux/files/usr/bin:$/storage/emulated/0/
     volumes:
-      - /data/data/com.elparadiaogonzalo.vhdx/files/home:/storage/emulated/0/
-      - /sdcard:/elparadisogonzalo.com.vhdx
+      - /data/data/com.elparadisogonzalo.vhdx/files/home:/storage/emulated/0/
+      - /sdcard/Elparadisogonzalo
     network_mode: "host"
