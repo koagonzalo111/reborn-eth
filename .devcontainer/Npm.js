@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-@azeha:registry=https://npm.pkg.elparadisogonzalo.com
-echo "//registry.npmjs.org/:_authToken="<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>" 
+@azeha:registry=https://npmjs.com/org/elparadisogonzalo-com
+echo "//registry.npmjs.org/:_authToken="<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>" 
 - name: Attest Build Provenance
   uses: actions/attest-build-provenance@v2.2.3
