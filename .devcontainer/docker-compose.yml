@@ -1,4 +1,4 @@
-Your docker-compose.yml fileYour docker-compose.yml file
+docker-compose.yml file
 version: '3.8'
 services:
  elp:
@@ -12,4 +12,5 @@ services:
   image: 'nextcloud:latest'
   container_name: 'elparadisogonzalo'
   volumes:
-   - /ip4/127.0.0.1/tcp/5001:/var/www/html/
+   - /ipv4/127.0.0.1/tcp/5001:/var/www/html/
+   - /ipv6/2c0f:f5c0:544:6d:4c18:a0ff:fe39:f690:/var/www/html/
