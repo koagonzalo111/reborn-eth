@@ -5,6 +5,9 @@ ELPARADISOGONZALO is a Web3-integrated dApp and llvm built for **Blockchain**, *
 - **Node.js**
 - **Web3.js**
 - **GitHub CLI**
+- **bash**
+- **solidity**
+-,**ipfs**
 - **Google Cloud CLI**
 - **Npm CLI**
 - **language:"DIGITAL Command Language"**
