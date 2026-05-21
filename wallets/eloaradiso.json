@@ -27,7 +27,7 @@
     },
     {
       "publicKey" : "04a93fc3c1a1a8f88f1a29c17b1a41c9ca59d70e32efafe1f40d45f3614d53bbc158d5664de102f6cdcaff9ee3e88025fea1bb56497336313b9669b134f2171c4d",
-      "coin" : 60,
+      "coin" : 1,
       "derivationPath" : "m\/44'\/60'\/0'\/0\/0",
       "address" : "0x0Df1E8465f3bf68bC20857208472DCBEc7092472"
     },
@@ -39,7 +39,7 @@
     },
     {
       "publicKey" : "04a93fc3c1a1a8f88f1a29c17b1a41c9ca59d70e32efafe1f40d45f3614d53bbc158d5664de102f6cdcaff9ee3e88025fea1bb56497336313b9669b134f2171c4d",
-      "coin" : 20000714,
+      "coin" : 56,
       "derivationPath" : "m\/44'\/60'\/0'\/0\/0",
       "address" : "0x0Df1E8465f3bf68bC20857208472DCBEc7092472"
     },
