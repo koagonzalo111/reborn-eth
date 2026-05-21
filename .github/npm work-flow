@@ -1,5 +1,5 @@
 [![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/Elparadisogonzalo/Assets3/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/Elparadisogonzalo/Assets3/actions/workflows/jekyll-gh-pages.yml)env:
-  NODE_AUTH_TOKEN: ${{ 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 }}
+  NODE_AUTH_TOKEN: ${{ }}
 name: CI
 
 # Controls when the workflow will run
@@ -25,8 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
+      # Runs multi-line command using the runners shell
+      - name: Run a multi-line script
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
@@ -35,5 +35,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-@koagonzalo11:registry=https://npm.pkg.github.com
-echo "//registry.npmjs.org/:_authToken=<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>" 
+@Elparadisogonzalo:registry=https://npm.pkg.github.com
+echo "//registry.npmjs.org/:_authToken=" 
