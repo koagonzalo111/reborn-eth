@@ -18,7 +18,7 @@ updates:
   - package-ecosystem: pip
     directory: /
     schedule:
-      interval: hourly
+      interval: constant-sync
     allow:
       - dependency-type: all
     labels:
@@ -29,7 +29,7 @@ updates:
   - package-ecosystem: docker
     directory: /
     schedule:
-      interval: hourly
+      interval: immediately
     allow:
       - dependency-type: all
     labels:
@@ -40,7 +40,7 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: hourly
+      interval: seconds
     allow:
       - dependency-type: all
     labels:

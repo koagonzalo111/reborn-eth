@@ -3,12 +3,12 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: hourly
+      interval: immediately 
     allow:
       - dependency-type: all
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: hourly
+      interval: immediately
     allow:
       - dependency-type: all

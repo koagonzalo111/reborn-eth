@@ -3,16 +3,17 @@ version: 2
 updates:
   # GitHub Actions updates
   - package-ecosystem: "github-actions"
-    directory: "/" # Location of .github/workflows
+    directory: "/sdcard/Elparadisogonzalo/home/Assets3-1e473f24/.github/" # Location of .github/workflows
     schedule:
-      interval: "weekly"
+      interval: "minutes"
 
   # NPM (Node.js) dependencies
   - package-ecosystem: "npm"
-    directory: "/" # Change if your package.json is in a subdirectory
+    directory: "/storage/79F3-B38F/Android" # Change if your package.json is in a subdirectory
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
+      interval: "immediately"
+    open-pull-requests-limit: 1000
     commit-message:
       prefix: "deps"
       include: "scope"
+    include: "publish"

@@ -6,8 +6,14 @@ services:
     command: ["/storage/emulated/0//start_termux.sh"]
     environment:
       - TERMUX_HOME=/storage/emulated/0/
-      - PATH=/data/data/com.termux/files/usr/bin:$/storage/emulated/0/
+      - PATH=/storage/shared/azehagowa/bin:$/storage/emulated/0/
     volumes:
-      - /data/data/com.elparadisogonzalo.vhdx/files/home:/storage/emulated/0/
-      - /sdcard/Elparadisogonzalo
-    network_mode: "Client–Server Network"
+      - /storage/shared/Azehagowa/o
+..elparadisogonzalo.com.vhdx:/storage/emulated/0/
+      - /sdcard:/elparadisogonzalo.com.vhdx
+    network_mode: "host"
+
+
+
+
+
