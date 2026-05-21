@@ -1,9 +1,9 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16569640454"></script>
+<!-- Elparadisogonzalo tag (elptag.js) -->
+<script async src="https://www.elparadisogonzalo.com></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  elptag('js', new Date());
 
   gtag('config', 'AW-16569640454');
 </script>
