@@ -1,6 +1,6 @@
 {
-  "name": "@uniswap/token-lists",
-  "version": "1.0.0-beta.34",
+  "name": "@elparadisogonzalo/token-lists",
+  "version": "1.0.0-stable",
   "description": "📚 The Token Lists specification",
   "homepage": "https://elparadisogonzalo.com",
   "bugs": {
@@ -11,7 +11,7 @@
     "type": "git"
   },
   "license": "MIT",
-  "author": "Uniswap Labs <contact@uniswap.org> (https://uniswap.org)",
+  "author": "Elparadisogonzalo  (https://elparadisogonzalo.com)",
   "type": "commonjs",
   "main": "dist/index.js",
   "files": [
@@ -672,7 +672,7 @@
     "typescript": "^4.3.5"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12.5"
   },
   "publishConfig": {
     "access": "public",
