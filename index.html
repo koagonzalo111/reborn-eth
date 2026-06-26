@@ -1,1 +1,288 @@
-<h1>Welcome to my world</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Elparadisogonzalo - Modern digital universe, projects, AI, and innovation." />
+  <title>Elparadisogonzalo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    }
+
+    body {
+      background: #05070f;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* PARTICLES CANVAS */
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    /* NAV */
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 30px;
+      background: rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      font-size: 18px;
+      color: #00c6ff;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 18px;
+      text-decoration: none;
+      opacity: 0.7;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      color: #00c6ff;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      margin-bottom: 10px;
+      animation: fadeUp 1s ease;
+    }
+
+    .hero p {
+      max-width: 600px;
+      opacity: 0.8;
+      margin-bottom: 20px;
+      animation: fadeUp 1.3s ease;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: linear-gradient(135deg,#00c6ff,#0072ff);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      animation: fadeUp 1.6s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* SECTIONS */
+    section {
+      position: relative;
+      z-index: 2;
+      padding: 90px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 0.8s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #00c6ff;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(0,198,255,0.1);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.6;
+      font-size: 13px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 34px; }
+      nav a { font-size: 12px; margin-left: 10px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+  <h1>Elparadisogonzalo</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Build. Create. Innovate.</h2>
+  <p>A modern digital universe for apps, AI systems, and creative technology.</p>
+  <a class="btn" href="#about">Explore</a>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    This is a modern personal hub for experiments, apps, and digital innovation.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">🚀 Web Apps</div>
+    <div class="card">🤖 AI Tools</div>
+    <div class="card">🔗 Blockchain Ideas</div>
+    <div class="card">🌐 API Systems</div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">JavaScript</div>
+    <div class="card">Python</div>
+    <div class="card">Node.js</div>
+    <div class="card">Git & GitHub</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:genyoungclip@gmail.com" style="color:#00c6ff;">genyoungclip@gmail.com</a></p>
+</section>
+
+<footer>
+  © 2026 Elparadisogonzalo. All rights reserved.
+</footer>
+
+<script>
+/* PARTICLES */
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for (let i = 0; i < 80; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 2,
+    dx: (Math.random() - 0.5),
+    dy: (Math.random() - 0.5)
+  });
+}
+
+function draw() {
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle = "rgba(0,198,255,0.7)";
+
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+    ctx.fill();
+
+    p.x += p.dx;
+    p.y += p.dy;
+
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  });
+
+  requestAnimationFrame(draw);
+}
+draw();
+
+/* SCROLL REVEAL */
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(sec => observer.observe(sec));
+
+/* RESIZE FIX */
+window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+</script>
+
+</body>
+</html>
